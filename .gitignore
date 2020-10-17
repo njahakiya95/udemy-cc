@@ -11,6 +11,6 @@ bin
 bin/ofMaker
 lib
 *.mk
-*.workspace.seesion
+*.workspace.session
 *.project
 *.txt
