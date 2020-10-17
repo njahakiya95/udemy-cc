@@ -15,3 +15,5 @@ lib
 *.workspace
 *.project
 *.txt
+*.tags-shm
+*.tags-wal
