@@ -17,4 +17,5 @@ lib
 *.project
 *.txt
 *.tags-shm
-*.tags-wal
+*.tags-wa
+*.nirmal
