@@ -3,6 +3,7 @@ Release
 Release_gcc_unicode
 DebugUnicode
 MakeFile
+Makefile
 *.session
 *.tags
 *.d
