@@ -3,48 +3,70 @@
 
 using namespace std; 
 
-//Function prototypes 
-void selection_menu();
-void print_number(); 
-void add_number(); 
-void calc_mean(); 
-void smallest_number(); 
-void largest_numbers(); 
- 
+//Function prototypes
+void display_menu(); 
+char upper_selection(); 
 
 int main() {
-    //Declare a vecor of numbers
+    //Numbers is a vector list of numbers 
+    vector<int> numbers;
     
-    //Function calls 
-    selection_menu(); 
+    //Selection stores user input
+    char selection {}; 
     
+    do {
+        //Display menu of options and take input and make it uppercase 
+        display_menu(); 
+        selection = upper_selection(); 
+        
+        //Run user-defined function based on the value of selection 
+        switch (selection) {
+            case 'P':
+                //function
+                break;
+            case 'A':
+                //function
+                break;
+            case 'M':
+                //function
+                break;
+            case 'L':
+                //function
+                break;
+            case 'Q':
+                //function
+                break; 
+        }
+    }
+    while (selection != 'Q'); 
+    
+    //Flush output stream
+    cout << endl; 
     return 0; 
 }
 
 
+/********************************************************
+User-defined functions
+********************************************************/
 
+//Display_menu outputs the selection menu 
+void display_menu() {
+    
+    cout << "\nP- Print numbers" << endl; 
+    cout << "A- Add a number" << endl; 
+    cout << "M- Display the mean of the numbers" << endl;
+    cout << "S- Display the smallest number" << endl;
+    cout << "L- Display the largest number" << endl; 
+    cout << "Q- Quit" << endl; 
+    cout << "\nEnter your choice: "; 
+}
 
-//selection_menu function displays the selection menu options
-void selection_menu() {
-    //Declare char that will store user selection
+//Upper_selection takes user input and capitalizes letter 
+char upper_selection() {
     char selection {}; 
-    
-    do {
-        cout << "\nP- Print numbers" << endl; 
-        cout << "A- Add a number" << endl; 
-        cout << "M- Display the mean of the numbers" << endl;
-        cout << "S- Display the smallest number" << endl;
-        cout << "L- Display the largest number" << endl; 
-        cout << "Q- Quit" << endl; 
-        cout << "\nEnter your choice: "; 
-    
-        //Store choice in char selection
-        cin >> selection; 
-    }
-    while (selection != 'Q' && selection != 'q'); 
+    cin >> selection;
+    return toupper(selection);  
 }
 
-//print_number function prints all of the numbers in the list 
-void print_number() {
-    
-}
+//Display_numbers outputs the list in the vector numbers 
