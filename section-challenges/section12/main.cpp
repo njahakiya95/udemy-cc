@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//array_all function 
+//apply_all function 
 int * apply_all(const int *const arr1, size_t size1, const int *const arr2, size_t size2) {
     int *new_array {}; 
     
@@ -52,4 +52,3 @@ int main() {
     delete [] results; 
     cout << endl; 
 }
-
