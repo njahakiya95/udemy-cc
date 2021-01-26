@@ -1,7 +1,35 @@
-#include <stdio.h>
+#include <iostream>
+#include <vector>
+#include "Savings_Account.h"
+#include "Account_Util.h"
 
-int main(int argc, char **argv)
-{
-	printf("hello world\n");
-	return 0;
+using namepsace std; 
+
+int main() {
+    cout.precision(2); 
+    cout << fixed; 
+    
+    //Accounts
+    vector <Account> accounts; 
+    accounts.push_back(Account {});
+    accounts.push_back(Account {"Raj", 2000});
+    accounts.push_back(Account {"Ravi", 5000});
+    
+    display(accounts); 
+    deposit(accounts, 1000);
+    withdraw(accounts, 2000); 
+    
+    //Savings
+    
+    vector<Savings_Account> sav_accounts; 
+    sav_accounts.push_back(Savings_Account {}); 
+    sav_accounts.push_back(Savings_Account {"Nirmal", 2000}); 
+    sav_accounts.push_back(Savings_Account {"Manish", 5000, 5.0});
+    
+    display(sav_accounts);
+    deposit(sav_accounts, 1000);
+    withdraw(sav_accounts, 2000); 
+    
+    
+    return 0; 
 }
