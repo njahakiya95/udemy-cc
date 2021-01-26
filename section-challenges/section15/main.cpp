@@ -3,7 +3,7 @@
 #include "Savings_Account.h"
 #include "Account_Util.h"
 
-using namepsace std; 
+using namespace std; 
 
 int main() {
     cout.precision(2); 

@@ -11,11 +11,11 @@ Savings_Account::Savings_Account(std::string name, double balance, double int_ra
 //
 
 bool Savings_Account::deposit(double amount) {
-    amount += amount * {int_rate/100}; 
-    return Account_deposit(amount); 
+    amount += amount * (int_rate/100); 
+    return Account::deposit(amount); 
 }
 
-std::ostream &operator<<(atd::ostream &os, const Savings_Account &account) {
+std::ostream &operator<<(std::ostream &os, const Savings_Account &account) {
     os << "[Savings_Account: " << account.name << ": " <<account.balance << ", " <<account.int_rate << "%]";
     return os; 
 }

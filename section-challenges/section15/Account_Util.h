@@ -7,8 +7,8 @@
 //Utility helper functions for Account class
 
 void display(const std::vector<Account> &accounts); 
-void deposit(std::vector<Account> &accounts, double amounts); 
-void withdraw(std::vector<Account> &accounts, double amounts); 
+void deposit(std::vector<Account> &accounts, double amount); 
+void withdraw(std::vector<Account> &accounts, double amount); 
 
 //Utility helper function for Savings Account class
 
