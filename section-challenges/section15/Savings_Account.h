@@ -6,7 +6,7 @@
 //adds an interest rate
 //Withdraw is the same as a regular Account
 //Deposit:
-//  Amount supplied to deposit will be incremented by (account * int_rate/100)
+//  Amount supplied to deposit will be incremented by (amount * int_rate/100)
 //  and then the updated amount will be deposited
 //
 

@@ -12,24 +12,22 @@ int main() {
     //Accounts
     vector <Account> accounts; 
     accounts.push_back(Account {});
-    accounts.push_back(Account {"Raj", 2000});
-    accounts.push_back(Account {"Ravi", 5000});
+    accounts.push_back(Account {"Alex", 2000});
+    accounts.push_back(Account {"Ben", 5000});
     
     display(accounts); 
     deposit(accounts, 1000);
     withdraw(accounts, 2000); 
     
     //Savings
-    
     vector<Savings_Account> sav_accounts; 
     sav_accounts.push_back(Savings_Account {}); 
-    sav_accounts.push_back(Savings_Account {"Nirmal", 2000}); 
-    sav_accounts.push_back(Savings_Account {"Manish", 5000, 5.0});
+    sav_accounts.push_back(Savings_Account {"Carl", 2000}); 
+    sav_accounts.push_back(Savings_Account {"Dan", 5000, 5.0});
     
     display(sav_accounts);
     deposit(sav_accounts, 1000);
     withdraw(sav_accounts, 2000); 
-    
     
     return 0; 
 }

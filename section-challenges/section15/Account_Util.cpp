@@ -30,7 +30,6 @@ void withdraw(std::vector<Account> &accounts, double amount) {
     }
 }
 
-
 //Helper functions for Savings Account class
 
 //Displays Savings Account objects in a vector of Savings Account objects 
