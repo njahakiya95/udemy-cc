@@ -75,7 +75,7 @@ int main()
     std::cout << std::endl; 
     std::cout << std::setw(field1_width) << std::left << "Country"
               << std::setw(field2_width) << std::left << "City"
-              << std::setw(field3_width) << std::left << "Population"
+              << std::setw(field3_width) << std::right << "Population"
               << std::setw(field4_width) << std::right << "Price"
               << std::endl; 
     
